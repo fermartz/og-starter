@@ -1,6 +1,6 @@
 <img src="https://github.com/ferMartz/og-starter/blob/main/frontend/assets/og-starter.png" />
 
-# IC Firestarter
+# OG Starter
 
 Modern starter and mini playground for the Internet Computer powered by [Create IC APP](https://github.com/MioQuispe/create-ic-app), [ViteJS](https://vitejs.dev/), [ReactJS](https://reactjs.org/), & [Material UI](https://mui.com/)
 
