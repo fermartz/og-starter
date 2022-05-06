@@ -1,5 +1,5 @@
 import { defineConfig } from "vite"
-import reactRefresh from "@vitejs/plugin-react-refresh"
+import react from "@vitejs/plugin-react"
 import path from "path"
 import dfxJson from "./dfx.json"
 import fs from "fs"
@@ -55,7 +55,7 @@ const DFX_PORT = dfxJson.networks.local.bind.split(":")[1]
 // See guide on how to configure Vite at:
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh()],
+  plugins: [react()],
   resolve: {
     alias: {
       // Here we tell Vite the "fake" modules that we want to define

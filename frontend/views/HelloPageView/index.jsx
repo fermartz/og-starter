@@ -4,6 +4,12 @@ import Typography from "@material-ui/core/Typography"
 import logo from "../../assets/logo.svg"
 import Button from "@material-ui/core/Button"
 import { counter } from "canisters/counter"
+import {
+  ConnectButton,
+  ConnectDialog,
+  Connect2ICProvider,
+  useConnect,
+} from "@connect2ic/react"
 
 function HelloPageView() {
   const [helloWorld, setHelloWorld] = useState("")
@@ -26,6 +32,8 @@ function HelloPageView() {
         alt="logo"
       />
       <Typography variant="h4">Hello World from Internet Computer</Typography>
+      <ConnectButton />
+      <ConnectDialog dark={false} />
       <Button
         variant="contained"
         color="primary"

@@ -126,6 +126,7 @@ export default function MiniDrawer() {
   const { state, dispatch } = useContext(SiteContext)
   const theme = useTheme()
   var localTheme = localStorage.getItem("theme")
+  // const { principal } = useConnect()
 
   const handleDrawerOpen = () => {
     dispatch({ type: "TOGGLE_TOOLBAR", payload: true })
@@ -143,7 +144,7 @@ export default function MiniDrawer() {
       payload: localTheme === "light" ? "dark" : "light",
     })
   }
-  console.log("sidebar", state)
+  // console.log("sidebar", principal)
   return (
     <>
       <AppBar
@@ -168,7 +169,9 @@ export default function MiniDrawer() {
             Origyn Starter
           </Typography>
           <Box padding="0 1rem" marginLeft="auto">
-            <Auth />
+            {/* <Auth /> */}
+            {/* <ConnectButton />
+            <ConnectDialog dark={false} /> */}
           </Box>
         </Toolbar>
       </AppBar>
